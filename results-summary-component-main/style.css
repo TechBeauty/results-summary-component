@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 800px;
+}
+
+
+.results {
+display: grid;
+background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+box-shadow: 10px 10px 25px 2px hsl(221, 100%, 96%);
+color: white;
+text-align: center; 
+border-radius: 20px;
+height: 500px;
+width: 400px;
+padding: 50px;
+z-index: 1;
+
+}
+
+
+.score-column {
+    display: grid;
+    grid-template-columns: auto;
+    height: 40px;
+    opacity: 0.7;
+}
+
+.number-column {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 60px;
+    height: 185px;
+    width: 185px;
+    padding: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+   
+   
+}
+
+.number-column #total {
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: -20px;
+   
+}
+
+.number-column #out-of {
+    font-size: small;
+    opacity: 0.7;
+}
+
+.message-column {
+    display: grid;
+    grid-template-columns: auto;
+    height: 60px;
+}
+
+.message-column p {
+    margin-left: 40px;
+    margin-top: 10px;
+    opacity: 0.7;
+    width: 220px;
+}
+
+
+
+
+.summary {
+display: grid;
+background-image: hsl(0, 0%, 100%);
+box-shadow: 10px 10px 25px 2px hsl(221, 100%, 96%);
+text-align: center; 
+border-radius: 20px;
+height: 500px;
+width: 400px;
+padding: 50px;
+   
+   
+}
+
+
+.summary h3 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#text-color {
+    color: hsl(220, 3%, 62%);
+}
+
+/* Reaction row */
+
+#reaction {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:  hsl(0, 100%, 98%);
+    border-radius: 10px;
+    height: 60px;
+}
+
+
+.reaction-image {
+    margin-top: 20px;
+}
+
+.reaction-title {
+    padding: 20px, 20px, 20px, 0;
+    margin-top: 20px;
+    color: hsl(0, 100%, 67%);
+    text-align: left;
+}
+
+.reaction-number {
+    padding: 20px;
+    color: hsl(224, 30%, 27%);
+    text-align: right;
+}
+
+
+/* Memory row */
+
+#memory {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: hsl(39, 100%, 93%);
+    border-radius: 10px;
+    height: 60px; 
+}
+
+
+.memory-image {
+    margin-top: 20px;
+    
+}
+
+.memory-title {
+    padding: 20px, 20px, 20px, 0;
+    margin-top: 20px;
+    color: hsl(39, 100%, 56%);
+    text-align: left;
+}
+
+.memory-number {
+    padding: 20px;
+    color: hsl(224, 30%, 27%);
+    text-align: right;
+
+}
+
+/* Verbal row */
+
+#verbal {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: hsl(221, 100%, 96%);
+    border-radius: 10px;
+    height: 60px;
+}
+
+.verbal-image {
+    margin-top: 20px;
+    
+}
+
+.verbal-title {
+    padding: 20px, 20px, 20px, 0;
+    margin-top: 20px;
+    color: hsl(166, 100%, 37%);
+    text-align: left;
+}
+
+.verbal-number {
+    padding: 20px;
+    color: hsl(224, 30%, 27%);
+    text-align: right;
+
+}
+
+
+/* Visual row */
+
+#visual {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: hsl(242, 89%, 93%);
+border-radius: 10px;
+height: 60px; 
+}
+
+.visual-image {
+    margin-top: 20px;
+    
+}
+
+.visual-title {
+    padding: 20px, 20px, 20px, 0;
+    margin-top: 20px;
+    color: hsl(234, 85%, 45%);
+    text-align: left;
+}
+
+.visual-number {
+    padding: 20px;
+    text-align: right;
+
+}
+
+
+
+button {
+    background: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    width: 70%;
+    height: 90%;
+
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+        color: hsl(252, 100%, 67%); 
+    }
+
+
+    /* Mobile View */
+
+    @media only screen and (max-width: 768px) {
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 150px;
+           
+        }
+
+        .score-column {
+            margin-bottom: 20px;
+        }
+
+        .number-column {
+            margin-bottom: 30px;
+            margin: auto;
+            height: 150px;
+            width: 150px;
+            
+        }
+
+        .number-column #total {
+            margin-top: -5px;
+            margin-bottom: -5px;
+    
+        }
+
+        
+        .message-column {
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .message-column p {
+            margin-left: 10px;
+            width: 280px;
+        }
+
+
+        #reaction {
+            margin-bottom: 10px;
+        }
+
+        #memory {
+            margin-bottom: 10px; 
+        }
+
+        #verbal {
+            margin-bottom: 10px;
+
+        }
+
+        #visual {
+            margin-bottom: 10px;
+
+            }
+
+        
+        button {
+            width: 80%;
+            height: 120%;
+        
+        }
+
+        .attribution {
+            margin-top: 150px;
+        }
+        
+    }
+    
+   
